@@ -170,7 +170,7 @@ data "aws_iam_instance_profile" "default" {
 }
 
 module "autoscale_group" {
-  source = "git::https://github.com/cloudposse/terraform-aws-ec2-autoscale-group.git?ref=tags/0.7.1"
+  source = "git::https://github.com/harana-oss/terraform-aws-ec2-autoscale-group.git"
 
   enabled    = var.enabled
   namespace  = var.namespace
